@@ -1,1 +1,22 @@
+// fn main() {
+//     let mut string_literal:String = String:: from ( "Hello gsvsdev");
+//     string_literal.push_str(" welcom");
+//     println!("{}", string_literal);
+// }
+
+// fn main() {
+//     let employee_info:(&str,u8) = ("gsvsdev",26);
+//     let employee_name:&str = employee_info.0;
+//     let employee_age:u8 = employee_info.1;
+//     println!("employee name is {}, and employee age is {}",employee_name ,employee_age);
+// }
+
+
+//#destructing
+
+// fn main(){
+//     let employee_detail:(&str, u8,u8)= ("gsvsdev", 26, 10);
+//     let(employee_name, employee_age,employee_id)=employee_detail;
+//     println!("employee name is {}, employee_age is {}, employee_number is {}", employee_name, employee_age, employee_id);
+// }
 
