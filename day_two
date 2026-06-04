@@ -1,0 +1,81 @@
+//#functions
+
+// fn main(){
+//     let num1:u8 = 20;
+//     let num2:u8 = 47;
+//     let result:u8 = add(num1,num2);
+//     println!("{} + {} = {}", num1, num1, num1 + num2);
+//
+//     fn add(num1:u8, num2:u8)->u8
+//     {
+//         return num1 + num2;
+//     }
+//
+// }
+
+//#ownership
+
+// fn main() {
+// let a=5;
+//     let b = a;
+//     println!("a={},b={}",a,b)
+//
+//
+// }
+
+// ownership with function
+//stack
+// fn main(){
+//     let x:u8 = 66;
+//     println!("the value of x in main() is {}",x);
+//     process_integer(x);
+// }
+//
+// fn process_integer(x:u8)
+// {
+//     println!("the value of x in process integer is {}",x);
+// }
+
+//heap
+
+// fn main(){
+//     let x:String= String:: from("hello");
+//    // println!("the value of x in main() is {}",x);
+//     process_integer(x);
+//     //println!("the value of x in main() is {}",x);
+// }
+//
+// fn process_integer(item:String) {
+//     println!(" the value of x in process integer is {}", item);
+// }
+
+// fn main(){
+//    let s1:String = get_string();
+// println!("this is s1 {}",s1);
+//     let s2:String = String::from("world");
+//     // println!("this is s2 {}",s2);
+//    let s3:String = send_get_string(s2);
+//     // println!("this is s2 {}",s2);
+//     println!("this is s3 {}",s3);
+//
+// }
+//
+// fn get_string()-> String{
+//     let new_string = String::from ("hello ");
+//     return new_string;
+// }
+//
+// fn send_get_string(received_string:String) -> String{
+// return received_string;
+// }
+
+// fn main(){
+//     let s1: String = String:: from ("hello");
+//     let len:usize =  calculate_len(s1);
+//     println!("the length of hello is {}",len);
+//
+// }
+//
+// fn calculate_len(s: String) -> usize {
+//     return s.len();
+// }
