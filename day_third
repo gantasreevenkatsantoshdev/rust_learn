@@ -115,3 +115,51 @@
 //     let name = user.name;
 //     println!("{}", user.age);
 // }
+//imp
+// struct User{
+//     name:String,
+//     age:u8,
+// }
+// fn main() {
+//     let user = User {
+//         name: String::from("pooja"),
+//         age: 32,
+//     };
+//     let name = user.name;
+//     println!("{}",user.age);
+// }
+//########
+// struct User {
+//     name: String,
+// }
+//
+// fn main() {
+//     let user = User {
+//         name: String::from("Mina"),
+//     };
+//     let name = &user.name;
+//     println!("{}", user.name);
+// }
+//####
+// fn length(s: &str) -> usize {
+//     s.len()
+// }
+//
+// fn main() {
+//     let name = String::from("Rust");
+//     println!("{}", length(&name));
+//     println!("{}", name);
+// }
+//#########
+// fn main() {
+//     let mut s = String::from("hello");
+//     let  r = &mut s;
+//     r.push_str("!");
+// }
+//####
+// fn main() {
+//     let  s = String::from("hello");
+//     let r1 =  s.clone();
+//     let r2 =  s;
+//     println!("{}, {}", r1, r2);
+// }
