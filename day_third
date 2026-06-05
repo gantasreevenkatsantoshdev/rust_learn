@@ -32,3 +32,40 @@
 //
 //     }
 //         println!("outer is {}",outer);
+
+//q5
+// fn main() {
+//     let name = String::from("pooja");
+//     greet(&name);
+//     println!("{}", name);
+// }
+// fn greet(person: &str){
+//     println!("Hello, {}", person);
+// }
+//q6
+// fn take(value: String) {
+//     println!("{}", value);
+// }
+//
+// fn main() {
+//     let s:String = String::from("rust");
+//     take(s);
+// }
+//q7
+// fn add_bang(mut text: String) -> String {
+//     text.push('!');
+//     text
+// }
+//
+// fn main() {
+//     let s:String = String::from("hello");
+//     let s = add_bang(s);
+//     println!("{}", s);
+// }
+//q8
+// fn main() {
+//     let s:String = String::from("book");
+//     let t = s.clone();
+//     let u = s;
+//     println!("{} {}", t,u);
+// }
