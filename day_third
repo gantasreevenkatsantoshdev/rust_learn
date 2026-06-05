@@ -69,3 +69,49 @@
 //     let u = s;
 //     println!("{} {}", t,u);
 // }
+// q9
+//
+//Write a function that creates and returns a `String`.
+// fn main(){
+//     let make_massage= make_massage();
+//     println!("{}", make_massage);
+// }
+//
+// fn make_massage()->String{
+//     String::from("wonership is usefull")
+// Predict the output.
+
+// fn main() {
+//
+//     let a = String::from("one");
+//     let b = a.clone();
+//     println!("{} {}", a, b);
+// }
+//####
+// fn main()
+// {
+//     let x:String=String::from("hello");
+//     drop(x);
+//     println!("{}", x);
+// }
+// fn main() {
+//     let pair:(String,String) = (String::from("left"), String::from("right"));
+//     let left = &pair.0;
+//     println!("{}", pair.1);
+//     println!("{}", left);
+// }
+
+//###########
+//  struct User {
+//      name: String,
+//      age: u8,
+// }
+//
+// fn main() {
+//     let user = User {
+//         name: String::from("Mina"),
+//         age: 22,
+//     };
+//     let name = user.name;
+//     println!("{}", user.age);
+// }
