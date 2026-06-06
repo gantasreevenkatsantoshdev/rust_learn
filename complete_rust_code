@@ -1,0 +1,371 @@
+
+// fn main() {
+//     let mut string_literal:String = String:: from ( "Hello gsvsdev");
+//     string_literal.push_str(" welcom");
+//     println!("{}", string_literal);
+// }
+
+// fn main() {
+//     let employee_info:(&str,u8) = ("gsvsdev",26);
+//     let employee_name:&str = employee_info.0;
+//     let employee_age:u8 = employee_info.1;
+//     println!("employee name is {}, and employee age is {}",employee_name ,employee_age);
+// }
+
+
+//#destructing
+
+// fn main(){
+//     let employee_detail:(&str, u8,u8)= ("gsvsdev", 26, 10);
+//     let(employee_name, employee_age,employee_id)=employee_detail;
+//     println!("employee name is {}, employee_age is {}, employee_number is {}", employee_name, employee_age, employee_id);
+// }
+
+// fn main(){
+//      print_value();
+// }
+//
+// fn print_value(){
+//     println!("hii gsvsdev")
+// }
+
+
+//#functions
+
+// fn main(){
+//     let num1:u8 = 20;
+//     let num2:u8 = 47;
+//     let result:u8 = add(num1,num2);
+//     println!("{} + {} = {}", num1, num1, num1 + num2);
+//
+//     fn add(num1:u8, num2:u8)->u8
+//     {
+//         return num1 + num2;
+//     }
+//
+// }
+
+//#ownership
+
+// fn main() {
+// let a=5;
+//     let b = a;
+//     println!("a={},b={}",a,b)
+//
+//
+// }
+
+// ownership with function
+//stack
+// fn main(){
+//     let x:u8 = 66;
+//     println!("the value of x in main() is {}",x);
+//     process_integer(x);
+// }
+//
+// fn process_integer(x:u8)
+// {
+//     println!("the value of x in process integer is {}",x);
+// }
+
+//heap
+
+// fn main(){
+//     let x:String= String:: from("hello");
+//    // println!("the value of x in main() is {}",x);
+//     process_integer(x);
+//     //println!("the value of x in main() is {}",x);
+// }
+//
+// fn process_integer(item:String) {
+//     println!(" the value of x in process integer is {}", item);
+// }
+
+// fn main(){
+//    let s1:String = get_string();
+// println!("this is s1 {}",s1);
+//     let s2:String = String::from("world");
+//     // println!("this is s2 {}",s2);
+//    let s3:String = send_get_string(s2);
+//     // println!("this is s2 {}",s2);
+//     println!("this is s3 {}",s3);
+//
+// }
+//
+// fn get_string()-> String{
+//     let new_string = String::from ("hello ");
+//     return new_string;
+// }
+//
+// fn send_get_string(received_string:String) -> String{
+// return received_string;
+// }
+
+// fn main(){
+//     let s1: String = String:: from ("hello");
+//     let len:usize =  calculate_len(s1);
+//     println!("the length of hello is {}",len);
+//
+// }
+//
+// fn calculate_len(s: String) -> usize {
+//     return s.len();
+// }
+
+
+// fn main(){
+// let s1:String = String::from ("hello");
+//     let (s2,len)= calculate_length(s1);
+//     println!("The length of {} is {}", s2, len);
+// }
+//
+// fn calculate_length(s:String) -> (String,usize){
+//     let length:usize= s.len();
+//     return (s,length);
+// }
+
+// fn main(){
+//     let s1:String = String::from("hello");
+//     let len:usize=calculate_length(s1.clone());
+//     println!("the length of {} is {}",s1,len);
+// }
+//
+// fn calculate_length(s:String)->usize{
+//     let length:usize=s.len();
+//     return length;
+// }
+
+//borrowing
+
+// fn main(){
+//     let s1:String = String::from("hello");
+//     let len:usize=calculate_length(&s1);
+//     println!("the length of {} is {}",s1,len);
+// }
+//
+// fn calculate_length(s:&String)->usize {
+//     let length: usize = s.len();
+//     return length;
+// }
+
+
+// fn main(){
+//     let mut s1:String=String::from("hello");
+//     append_string(& mut s1);
+//     println!( "the append value is {}",s1);
+// }
+//
+// fn append_string(s:&mut String){
+//     s.push_str(" gsvsdev");
+// }
+
+//day 3rd
+//
+// fn main(){
+// let x:u8 = 45;
+//     println!("{}",x);
+// }
+
+
+
+// fn main(){
+// let mut s1 :String= String::from("hello");
+// let w1 = &mut s1;
+//     w1.push_str(" world");
+//     println!("{}",w1);
+// let mut w2= s1;
+//     w2.push_str(" gsvsdev");
+//     println!("{}",w2);
+//
+// }
+//q3
+// fn main(){
+//     let x =5;
+//     let y =x;
+//     println!("{},{}",x,y);
+// }
+//q4
+// fn main(){
+// let outer:String=String::from("outer");
+//     {
+//         let  inner:String=String::from("inner");
+//         println!("inner string is {}",inner);
+//
+//     }
+//         println!("outer is {}",outer);
+// }
+//q5
+// fn main() {
+//     let name = String::from("pooja");
+//     greet(&name);
+//     println!("{}", name);
+// }
+// fn greet(person: &str){
+//     println!("Hello, {}", person);
+// }
+//q6
+// fn take(value: String) {
+//     println!("{}", value);
+// }
+//
+// fn main() {
+//     let s:String = String::from("rust");
+//     take(s);
+// }
+//q7
+// fn add_bang(mut text: String) -> String {
+//     text.push('!');
+//     text
+// }
+//
+// fn main() {
+//     let s:String = String::from("hello");
+//     let s = add_bang(s);
+//     println!("{}", s);
+// }
+//q8
+// fn main() {
+//     let s:String = String::from("book");
+//     let t = s.clone();
+//     let u = s;
+//     println!("{} {}", t,u);
+// }
+// q9
+//
+//Write a function that creates and returns a `String`.
+// fn main(){
+//     let make_massage= make_massage();
+//     println!("{}", make_massage);
+// }
+//
+// fn make_massage()->String{
+//     String::from("wonership is usefull")
+// Predict the output.
+
+// fn main() {
+//
+//     let a = String::from("one");
+//     let b = a.clone();
+//     println!("{} {}", a, b);
+// }
+//####
+// fn main()
+// {
+//     let x:String=String::from("hello");
+//     drop(x);
+//     println!("{}", x);
+// }
+// fn main() {
+//     let pair:(String,String) = (String::from("left"), String::from("right"));
+//     let left = &pair.0;
+//     println!("{}", pair.1);
+//     println!("{}", left);
+// }
+
+//###########
+//  struct User {
+//      name: String,
+//      age: u8,
+// }
+//
+// fn main() {
+//     let user = User {
+//         name: String::from("Mina"),
+//         age: 22,
+//     };
+//     let name = user.name;
+//     println!("{}", user.age);
+// }
+//#####
+//imp
+// struct User{
+//     name:String,
+//     age:u8,
+// }
+// fn main() {
+//     let user = User {
+//         name: String::from("pooja"),
+//         age: 32,
+//     };
+//     let name = user.name;
+//     println!("{}",user.age);
+// }
+//########
+// struct User {
+//     name: String,
+// }
+//
+// fn main() {
+//     let user = User {
+//         name: String::from("Mina"),
+//     };
+//     let name = &user.name;
+//     println!("{}", user.name);
+// }
+//####
+// fn length(s: &str) -> usize {
+//     s.len()
+// }
+//
+// fn main() {
+//     let name = String::from("Rust");
+//     println!("{}", length(&name));
+//     println!("{}", name);
+// }
+//#########
+// fn main() {
+//     let mut s = String::from("hello");
+//     let  r = &mut s;
+//     r.push_str("!");
+// }
+//####
+// fn main() {
+//     let  s = String::from("hello");
+//     let r1 =  s.clone();
+//     let r2 =  s;
+//     println!("{}, {}", r1, r2);
+// }
+//#imp
+// fn main() {
+//     let s = String::from("hello");
+//     let r1 = &s;
+//     let r2 = & s;
+//     println!("{}", r1);
+// }
+//####
+// fn main() {
+//     let mut s = String::from("hello");
+//     let r1 = &s;
+//     println!("{}", r1);
+//     let r2 = &mut s;
+//     r2.push_str("!");
+// }
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//day 4th
+// fn main() {
+//     let mut s=String::from("gsvsdev");
+//     append_text(&mut s);
+//     println!("{}",s);
+// }
+// fn append_text(text:& mut String) {
+//     text.push_str(" rao")
+//
+//}
+//#########
+// fn shout(text: &str) {
+//     println!("{}", text.to_uppercase());
+// }
+//
+// fn main() {
+//     let owned = String::from("rust");
+//     shout("hello");
+//     shout(&owned);
+// }
+
+    
+}
+
