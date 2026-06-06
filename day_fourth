@@ -1,1 +1,21 @@
 
+//day 4th
+// fn main() {
+//     let mut s=String::from("gsvsdev");
+//     append_text(&mut s);
+//     println!("{}",s);
+// }
+// fn append_text(text:& mut String) {
+//     text.push_str(" rao")
+//
+//}
+//#########
+// fn shout(text: &str) {
+//     println!("{}", text.to_uppercase());
+// }
+//
+// fn main() {
+//     let owned = String::from("rust");
+//     shout("hello");
+//     shout(&owned);
+// }
