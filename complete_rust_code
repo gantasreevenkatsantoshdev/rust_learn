@@ -365,7 +365,88 @@
 //     shout("hello");
 //     shout(&owned);
 // }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//day 4th
+// fn main() {
+//     let mut s=String::from("gsvsdev");
+//     append_text(&mut s);
+//     println!("{}",s);
+// }
+// fn append_text(text:& mut String) {
+//     text.push_str(" rao")
+//
+//}
+//#########
+// fn shout(text: &str) {
+//     println!("{}", text.to_uppercase());
+// }
+//
+// fn main() {
+//     let owned = String::from("rust");
+//     shout("hello");
+//     shout(&owned);
+// }
+////######///
+// fn main(){
+//     let arr1;
+//     arr1=[1,2,3,4,5];
+//     println!("{}", arr1[0]);
+//     println!("{:?}", arr1);
+// }
 
-    
-}
+// fn main(){
+//     let arr:[&str;3]=["gsvs","dev","rao"];
+//     write_arr(arr);
+//     println!("{:?}",arr);
+// }
+// fn write_arr(mut arr1:[&str;3]){
+//     arr1[0]="pooja";
+//     println!("{:?}",arr1);
+// }
+//##
+// fn main(){
+//  let arry;
+//     arry=[1,2,3,4,5];
+//     println!("{:?}",arry)
+// }
+//##
+// fn main(){
+//     let array:[i32;3]=[1,2,3];
+//     println!("{:?}",array);
+//
+// }
+//###
+// fn main(){
+//     let array= [1,2];
+//     println!("{:?}",array);
+// }
+//##
+// fn main (){
+//     let array:[7;4];
+//     println!("{:?}", array);
+// }
+//##
+// fn main(){
+//     let  array = [0,1,2,3,4,5,6,7,8,9,10];
+//     println!("{:?}",array.len());
+// }
+//##
+// fn main(){
+//     fn main (){ ;
+//        let arry=[1,2,3];
+//         println!("{}",arry[0]);
+//     }
+// }
+//##
+// fn main() {
+//     let nums = [1, 2, 3];
+//     println!("{}", nums[2]);
+// }
+// fn main() {
+//     let nums = [1, 2, 3];
+//     match nums.get(10) {
+//         Some(value) => println!("{}", value),
+//         None => println!("No value at that index"),
+//     }
+
 
