@@ -76,3 +76,18 @@
 //     }
 // }
 
+// fn main() {
+//     fn is_even(num: i8) -> bool {
+//         if num % 2 == 0 {
+//             return true;
+//         }
+//         return false;
+//     }
+//
+//     let number = 9;
+//     match number {
+//         x if is_even(x) => println!("even"),
+//         x if !is_even(x) => println!("odd"),
+//         _=>println!("not even or odd"),
+//     }
+// }
