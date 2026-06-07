@@ -1,0 +1,78 @@
+//vector
+// fn main(){
+//     let mut v:Vec<i32>= Vec::new();
+//     v.push(1);
+//     v.push(2);
+//     println!("{:?}",v);
+// }
+
+//  fn main(){
+// let mut v= Vec ::<i32>::new();
+//      v.push(1);
+//      v.push(2);
+//      println!("{:?}",v);
+// }
+// fn main(){
+//     let mut v =vec![1,2,3,4,5,6];
+//     v.push(7);
+//     println!("{:?}",v)
+// }
+
+// fn main(){
+//     let  vrr:Vec<&str> =vec!["gsvs"," dev"," rao"];
+//     write_vrr(&vrr);
+//     println!("{:?}",vrr)
+//
+// }
+// fn write_vrr(vrr2:&Vec<&str>){
+//     println!("{:?}",vrr2)
+// }
+
+// fn main(){
+//     let number:i32 =13;
+//     match number{
+//         1 => println!("one"),
+//         2 => println!("two"),
+//         3 => println!("three"),
+//         4 => println!("four"),
+//         5 => println!("five"),
+//         6 => println!("six"),
+//         7 => println!("seven"),
+//         8 => println!("eight"),
+//         9 => println!("nine"),
+//         10 => println!("ten"),
+//         11 => println!("eleven"),
+//         12 => println!("twelve"),
+//         13 => println!("thirteen"),
+//         14 => println!("fourteen"),
+//         15 => println!("fifteen"),
+//         16 => println!("sixteen"),
+//         _=>println!("number is not found")
+//
+//     }
+// }
+//
+// fn main(){
+//     let number:i32 =1;
+//     match number{
+//         1 | 2 => println!("one or two"),
+//         18 => println!("two"),
+//         3 => println!("three"),
+//         4 => println!("four"),
+//         5 => println!("five"),
+//         6 => println!("six"),
+//         7 => println!("seven"),
+//         8 => println!("eight"),
+//         9 => println!("nine"),
+//         10 => println!("ten"),
+//         11 => println!("eleven"),
+//         12 => println!("twelve"),
+//         13 => println!("thirteen"),
+//         14 => println!("fourteen"),
+//         15 => println!("fifteen"),
+//         16 => println!("sixteen"),
+//         _=>println!("number is not found")
+//
+//     }
+// }
+
